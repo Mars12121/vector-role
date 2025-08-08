@@ -2,6 +2,8 @@ galaxy_info:
   author: Morozov Alexsandr
   description: Vector role
   company: Netology Homework Morozov A
+  role_name: install
+  namespace: install
 
   # If the issue tracker for your role is not on github, uncomment the
   # next line and provide a value
