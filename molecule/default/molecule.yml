@@ -3,6 +3,11 @@ dependency:
   name: galaxy
 driver:
   name: docker
+
+lint: |
+  ansible-lint .
+  yamllint .
+
 platforms:
   - name: instance
     image: quay.io/centos/centos:8
@@ -20,11 +25,3 @@ provisioner:
   name: ansible
 verifier:
   name: ansible
-
-# ---
-# driver:
-#   name: docker
-# platforms:
-#   - name: instance
-#     image: quay.io/centos/centos:stream8
-#     pre_build_image: true
